@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: html-to-pdf-api
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: SUPABASE_BUCKET
+        value: pdfs

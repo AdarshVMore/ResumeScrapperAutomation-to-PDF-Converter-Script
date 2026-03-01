@@ -12,10 +12,10 @@ SERVICE_ACCOUNT_FILE = "n8ntrial-474722-08007fbfcb8f.json"
 SPREADSHEET_ID = "1YKMTCqY0lXbN0_SGRGSffEsXmu-knsPBSv7tMfiuWKE"
 WKHTMLTOPDF_PATH = "/usr/local/bin/wkhtmltopdf"
 
-OUTPUT_ROOT = "PDFs"
+OUTPUT_ROOT = "Arunkumar-PDFs"
 
 # 👇 CHANGE ONLY THIS
-ACTIVE_SHEET = "MNC"
+ACTIVE_SHEET = "Startups"   # Options: "Startups", "Midcap", "MNC"
 
 # ─────────────────────────────
 # SHEET CONFIGS
@@ -23,19 +23,19 @@ ACTIVE_SHEET = "MNC"
 
 SHEETS = {
     "Startups": {
-        "name": "Startups Frontend-fullstack-banckend Resumes",
+        "name": "Srartup - Arunkumar",
         "html_col": 20,
         "company_col": 2,
         "status_col": 21,
     },
     "Midcap": {
-        "name": "Mid-cap Frontend-fullstack-banckend Resumes",
+        "name": "Mid-Cap Arunkumar",
         "html_col": 22,      # <-- EDIT THESE
         "company_col": 2,
         "status_col": 23,
     },
     "MNC": {
-        "name": "MNC Frontend-fullstack-banckend Resumes",
+        "name": "MNC Arunkumar",
         "html_col": 19,      # <-- EDIT THESE
         "company_col": 2,
         "status_col": 20,
@@ -151,7 +151,7 @@ for i, row in enumerate(rows, start=2):
 
         pdf_path = os.path.join(
             company_folder,
-            "Adarsh_More_Dev_Resume.pdf"
+            "Arunkumar_Dev_Resume.pdf"
         )
 
         print(f"Generating Row {i} → {pdf_path}")
