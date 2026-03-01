@@ -1,12 +1,14 @@
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 # Install WeasyPrint system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpango-1.0-0 \
+    libpango1.0-0 \
     libpangocairo-1.0-0 \
-    libgdk-pixbuf2.0-0 \
-    libffi-dev \
+    libgdk-pixbuf-2.0-0 \
+    libffi8 \
     libcairo2 \
+    libharfbuzz0b \
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
