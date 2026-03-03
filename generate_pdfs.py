@@ -3,11 +3,7 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account
 import os
 import re
-
-# ─────────────────────────────
-# CONFIGURATION
-# ─────────────────────────────
-
+x
 SERVICE_ACCOUNT_FILE = "n8ntrial-474722-08007fbfcb8f.json"
 SPREADSHEET_ID = "1YKMTCqY0lXbN0_SGRGSffEsXmu-knsPBSv7tMfiuWKE"
 WKHTMLTOPDF_PATH = "/usr/local/bin/wkhtmltopdf"
